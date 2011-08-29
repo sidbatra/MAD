@@ -31,7 +31,7 @@
         font-size: 13px;
         font-weight: bold;
         list-style-type: none;
-        padding-right: 7px;
+        padding-right: 8px;
       }
       img {
         border: 0px;
@@ -43,10 +43,29 @@
       div.header {
         text-align: center;
         width:100%;
-        padding-top: 50px;
+        padding-top: 20px;
       }
       img.logo {
-        width: 300px;
+        width: 320px;
+      }
+      button.large {
+        cursor: pointer; 
+        color: white; 
+        height: 60px; 
+        margin-left: 5px; 
+        margin-bottom: 7px;
+        width: 160px; 
+        font-family: Helvetica, Arial, sans-serif; 
+        padding: 4px; 
+        vertical-align:middle; 
+        font-weight: bold; 
+        font-size: 14px; 
+        border-right: 1px solid #03266F; 
+        border-bottom: 1px solid #03266F; 
+        border-top: none; 
+        border-left: none; 
+        background: transparent url(images/biggrad.gif) repeat-x; 
+        background-color: #1C3F88;
       }
       div.footer {
         font-family: Arial, Helvetica, sans-serif;
@@ -78,12 +97,15 @@
     </div>
 
     <div class="header" align="center">
-      <table border="1" style="width:60%;margin-left:20%;margin-right:auto;">
+      <table border="0" style="width:60%;margin-left:20%;margin-right:auto;">
         <tr>
           <td width="50%" align="left">
             <img class="logo" src="images/logo2.jpg"/>
           </td>
-          <td width="50%">
+          <td width="50%" align="middle" valign="bottom">
+            <button value="Request a Quote!" class="large">
+              Request a Quote
+            </button>
           </td>
         </tr>
       </table>
