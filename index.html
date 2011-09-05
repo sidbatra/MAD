@@ -6,7 +6,6 @@
     <meta name="Keywords" content="MAD,getmad,masseurs,doorstep,relax,employees,corporate,companies,reflexology,swati,dube,nidhi,goyal,new delhi,india" /> 
     <meta name="Description" content="MAD Inc. presents Masseurs At Doorstep in New Delhi India" /> 
     <link href="stylesheets/mad.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/global.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
     <script src="javascripts/slides.min.jquery.js"></script>
@@ -99,6 +98,27 @@
         background-color:#000000;
         padding-top: 11px;
       }
+
+      #slides {
+        z-index:100;
+      }
+
+      .slides_container {
+        width:735px;
+        overflow:hidden;
+        display:none;
+      }
+
+      .slides_container a {
+        width:735px;
+        height:416px;
+        display:block;
+      }
+
+      .slides_container a img {
+        display:block;
+      }
+
       div.content {
         width:735px;
         margin-left:auto;
@@ -132,9 +152,11 @@
         $('#slides').slides({
           preload: true,
           preloadImage: 'images/loading.gif',
-          play: 5000,
+          play: 3500,
           pause: 1500,
-          hoverPause: true
+          hoverPause: true,
+          generatePagination: false,
+          pagination: false
         });
       });
     </script>

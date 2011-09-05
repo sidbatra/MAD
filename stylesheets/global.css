@@ -3,23 +3,6 @@
 	reset.css
 */
 
-#container {
-	width:735px;
-	margin:0 auto;
-	position:relative;
-	z-index:0;
-}
-
-#example {
-	width:735px;
-	height:420px;
-	position:relative;
-}
-
-/*
-	Slideshow
-*/
-
 #slides {
 	z-index:100;
 }
