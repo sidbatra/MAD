@@ -16,6 +16,7 @@
 
   <body>
 
+
     <div class="navbar">
       <div class="navlist">
         <ul class="navlist">
@@ -43,40 +44,52 @@
     </div>
 
     <div class="content">
-    
-    <!--iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dFRQVHBxLWpCVWwwWTZxNFpHNzIyaVE6MQ" width="760" height="1191" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe-->
-
       <br><br><br><br>
+    
+      <script type="text/javascript">var submitted=false;</script>
+
+      <iframe name="contact_iframe" 
+              id="contact_iframe" 
+              src="https://docs.google.com/spreadsheet/embeddedform?formkey=dFRQVHBxLWpCVWwwWTZxNFpHNzIyaVE6MQ" 
+              style="display:none"
+              onload="if(submitted){window.location='contact.html'}">
+      </iframe>
+
       <div class="heading">Contact Us</div>
      
       <br>
+  
+      <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dFRQVHBxLWpCVWwwWTZxNFpHNzIyaVE6MQ" 
+            method="POST" 
+            target="contact_iframe" 
+            onsubmit="submitted=true;">
 
-      <div class="subheading">Full Name</div>
-      <input type="text" id="name" value="" class="text" style="width:250px">
+        <div class="subheading">Full Name</div>
+        <input type="text" id="name" value="" class="text" style="width:250px" name="entry.0.single">
 
-      <br><br> 
+        <br><br> 
 
-      <div class="subheading">Email</div>
-      <input type="text" id="email" value="" class="text" style="width:250px">
+        <div class="subheading">Email</div>
+        <input type="text" id="email" value="" class="text" style="width:250px" name="entry.2.single">
 
-      <br><br> 
+        <br><br> 
 
-      <div class="subheading">Phone Number</div>
-      <input type="text" id="number" value="" class="text" style="width:250px">
+        <div class="subheading">Phone Number</div>
+        <input type="text" id="number" value="" class="text" style="width:250px" name="entry.1.single">
 
-      <br><br> 
+        <br><br> 
 
-      <div class="subheading">Query Details</div>
-      <textarea id="details" rows="3" cols="60" value="" class=""></textarea>
+        <div class="subheading">Query Details</div>
+        <textarea id="details" rows="3" cols="60" value="" class="" name="entry.4.single"></textarea>
 
-      <br><br> 
-    
-      <button value="Submit" class="large" style="margin-left:0px">
-        Submit
-      </button>
+        <br><br> 
+      
+        <button value="Submit" class="large" style="margin-left:0px" type="submit" onclick="this.form.submit()">
+          Submit
+        </button>
+      </form>
 
-    <!--form action="https://docs.google.com/spreadsheet/formResponse?formkey=dFRQVHBxLWpCVWwwWTZxNFpHNzIyaVE6MQ" method="POST" id="ss-form"> 
-    </form--> 
+    </div>
 
     <div class="footer">
       <a href="#">Home</a> | 
@@ -86,6 +99,8 @@
       <br>
       &copy;2011 MAD
     </div>
+
+
   </body>
 
 </html>
