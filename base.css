@@ -62,16 +62,17 @@
     padding-top: 15px;
   }
   img.logo {
-    width: 320px;
+    /*width: 200px;*/
+    height: 65px;
   }
   button.large {
     cursor: pointer; 
     color: white; 
-    height: 60px; 
+    height: 55px; 
     margin-left: 5px; 
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     margin-right: 20px;
-    width: 160px; 
+    width: 150px; 
     font-family: Helvetica, Arial, sans-serif; 
     padding: 4px; 
     vertical-align:middle; 
