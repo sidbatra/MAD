@@ -13,6 +13,11 @@
     min-width : 600px;
     height:100%;
   }
+
+  .centre {
+    text-align: center;
+  }
+
   span.italics {
     font-style:italic;
   }
@@ -68,7 +73,7 @@
   button.large {
     cursor: pointer; 
     color: white; 
-    height: 55px; 
+    height: 53px; 
     margin-left: 5px; 
     margin-bottom: 6px;
     margin-right: 20px;
