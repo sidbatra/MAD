@@ -140,12 +140,10 @@
     margin-left:auto;
     margin-right:auto;
   }
-  div.quotation {
+  span.quotation {
     font-family: helvetica, georgia, courier, arial;
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
-    line-height: 40px;
-    text-align: center;
     font-weight:200;
   }
   div.footer {
