@@ -94,7 +94,8 @@
     border-top: none; 
     border-left: none; 
     background: transparent url(images/biggrad.gif) repeat-x; 
-    background-color: #1C3F88;
+    /*background-color: #1C3F88;*/
+    background-color: #2f0c20;
   }
   div.heading {
     font-family: Helvetica, Arial, sans-serif; 
