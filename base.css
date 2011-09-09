@@ -9,7 +9,8 @@
   }
 
   body {
-    background-color : #3558a1;/*#490b2f;/*#3c0b29;*/#430e2c;/*#771c48;/*#8c1f5b;*/
+    background-color : #661141;/*#6b1245;*/
+    /*background-color : #600d3c;/*#6b1245;/*#661141*/;
     min-width : 600px;
     height:100%;
   }
@@ -86,8 +87,10 @@
     vertical-align:middle; 
     font-weight: bold; 
     font-size: 14px; 
-    border-right: 1px solid #03266F; 
-    border-bottom: 1px solid #03266F; 
+    /*border-right: 1px solid #03266F; 
+    border-bottom: 1px solid #03266F; */
+    border-right: 1px solid #2f0c20; 
+    border-bottom: 1px solid #2f0c20; 
     border-top: none; 
     border-left: none; 
     background: transparent url(images/biggrad.gif) repeat-x; 
