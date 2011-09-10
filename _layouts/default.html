@@ -33,13 +33,16 @@
             </a>
           </td>
           <td width="50%" align="right" valign="bottom">
-            <button value="Request a Quote!" class="large" onclick="window.location='contact.html'">
-              Request a Quote
-            </button>
+            {% if page.hide-request-quote != true%}
+              <button value="Request a Quote!" class="large" onclick="window.location='contact.html'">
+                Request a Quote
+              </button>
+            {% endif %}
           </td>
         </tr>
       </table>
     </div>
+
 
     {{content}}
 
